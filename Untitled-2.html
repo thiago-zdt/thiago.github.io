@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Karatê Shotokan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1608571423907-f4960f1b8d2d'); /* imagem de karatê */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 100px 40px 40px; /* Espaço extra no topo por causa da navbar */
+            min-height: 100vh;
+        }
+
+        .prices {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .price-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: 24px;
+            text-align: center;
+            border: 2px solid white;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 80px;
+        }
+
+        .content-container h2 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .content-container p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a nry = "file:///E:/PW/Aula%201%20site%20do%20Karat%C3%AA/Untitled-1.html">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </div>
+
+    <div class="overlay" id="inicio">
+        <div class="prices">
+            <div class="price-item">Mensalidade Básica: R$78</div>
+            <div class="price-item">Plano Intermediário: R$105</div>
+            <div class="price-item">Plano Avançado: R$99</div>
+        </div>
+
+        <div class="content-container" id="sobre">
+            <h2>Sobre a Academia Shotokan</h2>
+            <p>
+                Fundada com o espírito do verdadeiro Karatê Tradicional, nossa academia Shotokan é um espaço dedicado à disciplina, superação e evolução pessoal. 
+                Com treinos que respeitam os princípios do mestre Gichin Funakoshi, oferecemos aulas para todas as idades e níveis, desde iniciantes até faixas pretas experientes.
+                Nossa missão é formar não apenas lutadores, mas indivíduos fortes de corpo, mente e espírito. Aqui, cada kata, cada kihon e cada kumite é mais do que técnica — 
+                é caminho de autoconhecimento e respeito. Venha fazer parte dessa jornada marcial conosco!
+            </p>
+        </div>
+
+        <div class="content-container" id="contato">
+            <h2>Contato</h2>
+            <p>
+                📞 Telefone: (11) 99999-9999<br>
+                📧 E-mail: contato@academiashotokan.com.br<br>
+                📍 Endereço: Rua dos Samurais, 123 - São Paulo, SP
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Academia de Karatê Shotokan. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
